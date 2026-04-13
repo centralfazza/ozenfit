@@ -1,8 +1,9 @@
-/* Mobile First - Variables and Rules exist, overriding for larger screens */
-
 @media (max-width: 1200px) {
   .price-cards {
     flex-wrap: wrap;
+  }
+  .ing-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -16,10 +17,11 @@
   .guar-grid,
   .res-grid,
   .contact-grid,
-  .testi-grid {
+  .testi-grid,
+  .doctor-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -27,21 +29,42 @@
   .price-cards {
     flex-direction: column;
   }
-  
+
   .price-card.highlight {
     transform: scale(1);
   }
-  
+
   .hero-img {
-    width: 92%;
+    width: 60%;
   }
 
   .hero h1 {
-    font-size: 35px;
+    font-size: 28px;
   }
-  
+
+  .bc-headline {
+    font-size: 28px;
+  }
+
   .btn-large {
     width: 100%;
+  }
+
+  .res-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doctor-image {
+    text-align: center;
+  }
+  .doctor-image img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .warn-box {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -50,15 +73,15 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .hero-pretitle {
-    font-size: 16px;
+    font-size: 14px;
   }
-  
+
   .urgency-bar {
     font-size: 12px;
   }
-  
+
   .offer-bar {
     font-size: 10px;
   }
@@ -66,5 +89,13 @@
   .trust-icons-row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .res-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ing-grid {
+    grid-template-columns: 1fr;
   }
 }
