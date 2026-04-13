@@ -1,0 +1,31 @@
+:root {
+  --primary-dark: #06470F;
+  --primary-mid: #0FA424;
+  --primary-light: #459A36;
+  --primary-lighter: #57CF29;
+  
+  --bg-white: #FFFFFF;
+  --bg-light: #F9F9F9;
+  --bg-gray: #F6F6F6;
+  --bg-dark-gray: #F4F4F4;
+
+  --text-dark: #000000;
+  --text-main: #313131;
+  
+  --urgency-red: #B70000;
+  
+  --gradient-btn: linear-gradient(135deg, #57CF29 0%, #32900E 100%);
+  --gradient-green-dark: linear-gradient(135deg, #459A36 0%, #163111 100%);
+  --gradient-green-footer: linear-gradient(135deg, #06470F 0%, #0FA424 100%);
+  
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-lora: 'Lora', serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
+
+  --border-radius: 10px;
+  --border-radius-btn: 50px;
+  
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --shadow-btn: 0 6px 15px rgba(50, 144, 14, 0.4);
+}

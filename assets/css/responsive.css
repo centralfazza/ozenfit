@@ -1,0 +1,70 @@
+/* Mobile First - Variables and Rules exist, overriding for larger screens */
+
+@media (max-width: 1200px) {
+  .price-cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-benefits-grid,
+  .bc-top-grid,
+  .bc-main-grid,
+  .hiw-grid,
+  .ing-grid,
+  .ship-grid,
+  .guar-grid,
+  .res-grid,
+  .contact-grid,
+  .testi-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .price-cards {
+    flex-direction: column;
+  }
+  
+  .price-card.highlight {
+    transform: scale(1);
+  }
+  
+  .hero-img {
+    width: 92%;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+  
+  .btn-large {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .hero-pretitle {
+    font-size: 16px;
+  }
+  
+  .urgency-bar {
+    font-size: 12px;
+  }
+  
+  .offer-bar {
+    font-size: 10px;
+  }
+
+  .trust-icons-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
