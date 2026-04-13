@@ -54,6 +54,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .doctor-image {
     text-align: center;
   }
