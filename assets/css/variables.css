@@ -1,31 +1,33 @@
 :root {
-  --primary-dark: #06470F;
-  --primary-mid: #0FA424;
-  --primary-light: #459A36;
-  --primary-lighter: #57CF29;
-  
-  --bg-white: #FFFFFF;
-  --bg-light: #F9F9F9;
-  --bg-gray: #F6F6F6;
-  --bg-dark-gray: #F4F4F4;
+  /* Colors */
+  --color-primary: #0D6E4F;
+  --color-primary-light: #16A34A;
+  --color-primary-dark: #064E36;
+  --color-accent: #C9A252;
+  --color-bg-main: #FFFFFF;
+  --color-bg-soft: #FAF7F2;
+  --color-text: #1A1A1A;
+  --color-text-muted: #6B7280;
+  --color-cta-from: #22C55E;
+  --color-cta-to: #0D6E4F;
+  --color-urgency: #DC2626;
 
-  --text-dark: #000000;
-  --text-main: #313131;
-  
-  --urgency-red: #B70000;
-  
-  --gradient-btn: linear-gradient(135deg, #57CF29 0%, #32900E 100%);
-  --gradient-green-dark: linear-gradient(135deg, #459A36 0%, #163111 100%);
-  --gradient-green-footer: linear-gradient(135deg, #06470F 0%, #0FA424 100%);
-  
-  --font-montserrat: 'Montserrat', sans-serif;
-  --font-poppins: 'Poppins', sans-serif;
-  --font-lora: 'Lora', serif;
-  --font-bebas: 'Bebas Neue', sans-serif;
+  /* Typography */
+  --font-headings: 'Playfair Display', serif;
+  --font-body: 'Nunito', sans-serif;
 
-  --border-radius: 10px;
-  --border-radius-btn: 50px;
-  
-  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.05);
-  --shadow-btn: 0 6px 15px rgba(50, 144, 14, 0.4);
+  /* Spacing & Sizes */
+  --container-width: 1200px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-pill: 50px;
+
+  /* Transitions & Shadows */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 8px 32px rgba(13, 110, 79, 0.15);
+  --shadow-cta: 0 8px 32px rgba(13, 110, 79, 0.40);
 }
