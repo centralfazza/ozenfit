@@ -631,10 +631,93 @@ footer {
   display: inline-block;
   font-weight: 600;
 }
+.footer-legal {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 20px 0;
+  line-height: 1.8;
+}
+.footer-legal a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
 .footer-bottom {
   text-align: center;
   font-size: 9px;
   color: rgba(255,255,255,0.6);
   border-top: 1px solid rgba(255,255,255,0.1);
   padding-top: 20px;
+}
+
+/* Precos riscados */
+.card-price-original {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 5px;
+}
+.card-price-original s {
+  color: #c00;
+}
+.card-economy {
+  font-size: 13px;
+  color: var(--primary-dark);
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: #E8F5E9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Data dos depoimentos */
+.testi-date {
+  font-size: 11px;
+  color: #999;
+  margin-top: 3px;
+}
+
+/* WhatsApp Flutuante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  animation: whatsapp-pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-tooltip {
+  position: absolute;
+  right: 70px;
+  background: #333;
+  color: #FFF;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.whatsapp-float:hover .whatsapp-tooltip {
+  opacity: 1;
+}
+
+@keyframes whatsapp-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
