@@ -86,7 +86,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }, (Math.floor(Math.random() * 4) + 3) * 60000);
   })();
 
-  // 5. UTM Propagation Script (PRESERVED)
+  // 5. Video Testimonials Play/Pause
+  document.querySelectorAll('.video-card').forEach(card => {
+    const video = card.querySelector('video');
+    const overlay = card.querySelector('.video-overlay');
+    if (!video || !overlay) return;
+
+    card.addEventListener('click', () => {
+      if (video.paused) {
+        // Pausa todos os outros vídeos
+        document.querySelectorAll('.video-card video').forEach(v => {
+          if (v !== video) {
+            v.pause();
+            v.parentElement.querySelector('.video-overlay')?.classList.remove('hidden');
+          }
+        });
+        video.muted = false;
+        video.play();
+        overlay.classList.add('hidden');
+      } else {
+        video.pause();
+        overlay.classList.remove('hidden');
+      }
+    });
+
+    video.addEventListener('ended', () => {
+      overlay.classList.remove('hidden');
+    });
+  });
+
+  // 6. UTM Propagation Script (PRESERVED)
   (function() {
     const utmParamQueryString = new URLSearchParams(window.location.search);
     if (utmParamQueryString.toString()) {
