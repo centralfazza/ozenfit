@@ -8,6 +8,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero-video-wrapper {
+    max-width: 100%;
+    padding: 0 24px;
+  }
   .hero-benefits-grid,
   .bc-top-grid,
   .bc-main-grid,
@@ -73,6 +77,13 @@
 }
 
 @media (max-width: 480px) {
+  .hero-video-wrapper {
+    padding: 0;
+  }
+
+  .hero-video-player {
+    border-radius: 12px;
+  }
   .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;
